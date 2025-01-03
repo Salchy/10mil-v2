@@ -102,3 +102,6 @@ void drawDado(int numDado, int pos) {
         cout << '*';
     }
 }
+
+void draw
+

@@ -85,7 +85,7 @@ void game() {
     // True = Turno jugador 1
     // False = Turno jugador 2
     while (true) {
-
+        draw
 
         turno = !turno;
         if (ganador) {

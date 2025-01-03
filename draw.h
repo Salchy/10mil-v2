@@ -9,6 +9,8 @@ void showDeveloper();
 
 void showStatistics(std::string nombrePuntajeMaximo, int puntajeMaximo);
 
+void showGameStatics(std::string playerName1, std::string playerName2, );
+
 void drawDado(int numDado, int pos);
 
 void drawDados(int dados[]);
