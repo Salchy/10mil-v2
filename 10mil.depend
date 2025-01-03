@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1722956669 source:c:\users\lcorrea\desktop\salchy\utn\prog i\10mil\10mil\game.cpp
+	<iostream>
+	"draw.h"
+	"game.h"
+
+1722964739 source:c:\users\lcorrea\desktop\salchy\utn\prog i\10mil\10mil\draw.cpp
+	<iostream>
+	"rlutil.h"
+
+1722956935 source:c:\users\lcorrea\desktop\salchy\utn\prog i\10mil\10mil\main.cpp
+	<iostream>
+	"game.h"
+	"draw.h"
+
+1722956667 c:\users\lcorrea\desktop\salchy\utn\prog i\10mil\10mil\draw.h
+	<iostream>
+
+1722952384 c:\users\lcorrea\desktop\salchy\utn\prog i\10mil\10mil\game.h
+	<iostream>
+
+1571584340 c:\users\lcorrea\desktop\salchy\utn\prog i\10mil\10mil\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1729175580 source:g:\mi unidad\utn\cursada 2024\prog i\10mil\10mil\game.cpp
+	<iostream>
+	"draw.h"
+	"game.h"
+
+1729175626 g:\mi unidad\utn\cursada 2024\prog i\10mil\10mil\draw.h
+
+1729175646 g:\mi unidad\utn\cursada 2024\prog i\10mil\10mil\game.h
+
+1729175585 source:g:\mi unidad\utn\cursada 2024\prog i\10mil\10mil\main.cpp
+	<iostream>
+	"game.h"
+	"draw.h"
+
+1729179169 source:g:\mi unidad\utn\cursada 2024\prog i\10mil\10mil\draw.cpp
+	<iostream>
+	"rlutil.h"
+	"draw.h"
+
+1571584340 g:\mi unidad\utn\cursada 2024\prog i\10mil\10mil\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
