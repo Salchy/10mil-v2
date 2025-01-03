@@ -17,7 +17,7 @@ void initMenu() {
         switch (opcion) {
             case '1':
                 //startGame();
-                startGame(getGameMode());
+                startGame(setGameMode());
                 break;
             case '2':
                 showStatistics(nombrePuntajeMaximo, puntajeMaximo);
@@ -54,7 +54,7 @@ void initMenu() {
 void startGame(int gameMode) {
     string playerName1, playerName2;
     if (gameMode == 1) {
-        //string randomNames[10] = {"Jorge", "Alicia", "Silvia", "Ana", "Luis", "Susana", "Hector", "Pedro", "Juan", "Marta"};
+        string randomNames[10] = {"Jorge", "Alicia", "Silvia", "Ana", "Luis", "Susana", "Hector", "Pedro", "Juan", "Marta"};
         char confirmar;
         do {
             drawGameTitle();
@@ -71,13 +71,28 @@ void startGame(int gameMode) {
                 system("pause");
             }
         } while (!isYes(confirmar));
-        //do {
-        //    playerName2 = randomNames[numeroRandom(0, 9)];
-        //} while (playerName2 == playerName1);
+        do {
+            playerName2 = randomNames[numeroRandom(0, 9)];
+        } while (playerName2 == playerName1);
     } else if (gameMode == 2) {
         registerPlayerNames(playerName1, playerName2);
     }
+    game();
+}
 
+void game() {
+    bool turno = true;
+    // True = Turno jugador 1
+    // False = Turno jugador 2
+    while (true) {
+
+
+        turno = !turno;
+        if (ganador) {
+            break;
+        }
+    }
+    // mostrarGanador();
 }
 
 int setGameMode() {
@@ -88,8 +103,12 @@ int setGameMode() {
 
         cout << "1 - Modo 1 jugador" << endl;
         cout << "2 - Modo 2 jugadores" << endl;
+        cout << "0 - Cancelar" << endl << endl;
         cout << "Seleccione el modo de juego (1/2): ";
         cin >> opcion;
+        if (opcion == 48) {
+            return 0;
+        }
         if (opcion == 49 || opcion == 50) {
             if (opcion == 49) {
                 return 1;
