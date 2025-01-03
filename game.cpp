@@ -80,27 +80,7 @@ void startGame(int gameMode) {
 
 }
 
-void registerPlayerNames(string &player1, string &player2) {
-    char confirmar;
-    do {
-        drawGameTitle();
-        cout << endl;
-        cout << "Ingrese el nombre del jugador 1: ";
-        cin >> player1;
-        cout << "Ingrese el nombre del jugador 2: ";
-        cin >> player2;
-
-        cout << "¿Confirmar nombres? (S/N): ";
-        cin >> confirmar;
-        if (!yesOrNo(confirmar)) {
-            cout << "Opcion invalida. Intente nuevamente.";
-            cout << endl;
-            system("pause");
-        }
-    } while (!isYes(confirmar));
-}
-
-int getGameMode() {
+int setGameMode() {
     char opcion;
     do {
         drawGameTitle();
@@ -124,6 +104,25 @@ int getGameMode() {
     return opcion;
 }
 
+void registerPlayerNames(string &player1, string &player2) {
+    char confirmar;
+    do {
+        drawGameTitle();
+        cout << endl;
+        cout << "Ingrese el nombre del jugador 1: ";
+        cin >> player1;
+        cout << "Ingrese el nombre del jugador 2: ";
+        cin >> player2;
+
+        cout << "¿Confirmar nombres? (S/N): ";
+        cin >> confirmar;
+        if (!yesOrNo(confirmar)) {
+            cout << "Opcion invalida. Intente nuevamente.";
+            cout << endl;
+            system("pause");
+        }
+    } while (!isYes(confirmar));
+}
 
 int numeroRandom(int minimo, int maximo) {
     return (rand() % (maximo - minimo + 1)) + minimo;

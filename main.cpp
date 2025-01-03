@@ -4,10 +4,10 @@
 using namespace std;
 
 int main(){
-    //initMenu();
+    initMenu();
 
-    int dados[6] = {1, 2, 3, 4, 5, 6};
-    drawDados(dados);
+    //int dados[6] = {1, 2, 3, 4, 5, 6};
+    //drawDados(dados);
 
     return 0;
 }

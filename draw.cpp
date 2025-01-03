@@ -56,6 +56,8 @@ void drawDados(int dados[]) {
     rlutil::saveDefaultColor();
     for (int i = 0; i < 6; i++) {
         drawDado(dados[i], i);
+        rlutil::locate(10, 15);
+        system("pause");
     }
     rlutil::resetColor();
     system("pause");
@@ -99,6 +101,4 @@ void drawDado(int numDado, int pos) {
         rlutil::locate(initX + (6 * pos) + 2, initY + 2);
         cout << '*';
     }
-    rlutil::locate(initX, 15);
-    system("pause");
 }
